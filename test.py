@@ -57,7 +57,44 @@ for col in colors:
 
     # dictionary
     me = {
-        "firstName": "Danny"
+        "age":33,
+        "firstName": "Danny",
         "lastName": "Do"
-        "age":33
     }
+
+print(me)
+# modify
+me["age"]=99
+# get the values
+print(me["firstName"])
+
+
+# create a calculatior using functions.
+def printMenu():
+    print("[1]sum")
+    print("[2]Subtract")
+    print("[3]Multiplication")
+    print("[4]Division")
+
+#plain instructions
+printMenu()
+opt = input("Select the option")
+
+number1=float(input("please give me the first number "))
+number2=float(input("please give me the 2nd number "))
+
+if opt=="1":
+    total= number1 + number2
+    print("the total is:"+ str(total))
+elif opt=="2":
+    total = number1 - number2
+    print("the total is:"+ str(total))
+elif opt=="3":
+    total = number1 * number2
+    print("the total is:"+ str(total))
+elif opt=="4":
+    if number2 == 0:
+        print("You cannot divide by zero")
+    else:
+        total = number1 / number2
+        print("the total is:"+ str(total))
